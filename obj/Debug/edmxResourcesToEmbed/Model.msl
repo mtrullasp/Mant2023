@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="masterEntities">
+    <EntitySetMapping Name="CORE_artist">
+      <EntityTypeMapping TypeName="masterModel.CORE_artist">
+        <MappingFragment StoreEntitySet="CORE_artist">
+          <ScalarProperty Name="idMN" ColumnName="idMN" />
+          <ScalarProperty Name="nameMN" ColumnName="nameMN" />
+          <ScalarProperty Name="urlSource" ColumnName="urlSource" />
+          <ScalarProperty Name="ranking" ColumnName="ranking" />
+          <ScalarProperty Name="urlImage" ColumnName="urlImage" />
+          <ScalarProperty Name="biographpy" ColumnName="biographpy" />
+          <ScalarProperty Name="beginDate" ColumnName="beginDate" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+          <ScalarProperty Name="idArtistDZ" ColumnName="idArtistDZ" />
+          <ScalarProperty Name="widthImage" ColumnName="widthImage" />
+          <ScalarProperty Name="heightImage" ColumnName="heightImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mc_composition">
+      <EntityTypeMapping TypeName="masterModel.mc_composition">
+        <MappingFragment StoreEntitySet="mc_composition">
+          <ScalarProperty Name="idWork" ColumnName="idWork" />
+          <ScalarProperty Name="nameWork" ColumnName="nameWork" />
+          <ScalarProperty Name="idComposerMN" ColumnName="idComposerMN" />
+          <ScalarProperty Name="composedDate" ColumnName="composedDate" />
+          <ScalarProperty Name="urlSource" ColumnName="urlSource" />
+          <ScalarProperty Name="workGenre" ColumnName="workGenre" />
+          <ScalarProperty Name="workType" ColumnName="workType" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="descriptionAuthor" ColumnName="descriptionAuthor" />
+          <ScalarProperty Name="featured" ColumnName="featured" />
+          <ScalarProperty Name="performancesCount" ColumnName="performancesCount" />
+          <ScalarProperty Name="atAgeOf" ColumnName="atAgeOf" />
+          <ScalarProperty Name="lastProcesed" ColumnName="lastProcesed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mc_composition_parts">
+      <EntityTypeMapping TypeName="masterModel.mc_composition_parts">
+        <MappingFragment StoreEntitySet="mc_composition_parts">
+          <ScalarProperty Name="idWork" ColumnName="idWork" />
+          <ScalarProperty Name="idWorkOrd" ColumnName="idWorkOrd" />
+          <ScalarProperty Name="nameWorkItem" ColumnName="nameWorkItem" />
+          <ScalarProperty Name="avgDuration" ColumnName="avgDuration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mn_composer">
+      <EntityTypeMapping TypeName="masterModel.mn_composer">
+        <MappingFragment StoreEntitySet="mn_composer">
+          <ScalarProperty Name="idComposer" ColumnName="idComposer" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="urlSource" ColumnName="urlSource" />
+          <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+          <ScalarProperty Name="begin_date" ColumnName="begin_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="ranking" ColumnName="ranking" />
+          <ScalarProperty Name="biography" ColumnName="biography" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mn_composer_rel">
+      <EntityTypeMapping TypeName="masterModel.mn_composer_rel">
+        <MappingFragment StoreEntitySet="mn_composer_rel">
+          <ScalarProperty Name="idComposer" ColumnName="idComposer" />
+          <ScalarProperty Name="idRelTip" ColumnName="idRelTip" />
+          <ScalarProperty Name="idComposerRel" ColumnName="idComposerRel" />
+          <ScalarProperty Name="nOrd" ColumnName="nOrd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mn_relTip">
+      <EntityTypeMapping TypeName="masterModel.mn_relTip">
+        <MappingFragment StoreEntitySet="mn_relTip">
+          <ScalarProperty Name="idRelTip" ColumnName="idRelTip" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSreplication_options">
+      <EntityTypeMapping TypeName="masterModel.MSreplication_options">
+        <MappingFragment StoreEntitySet="MSreplication_options">
+          <ScalarProperty Name="optname" ColumnName="optname" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="major_version" ColumnName="major_version" />
+          <ScalarProperty Name="minor_version" ColumnName="minor_version" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="install_failures" ColumnName="install_failures" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_fallback_db">
+      <EntityTypeMapping TypeName="masterModel.spt_fallback_db">
+        <MappingFragment StoreEntitySet="spt_fallback_db">
+          <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+          <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+          <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+          <ScalarProperty Name="xfallback_dbid" ColumnName="xfallback_dbid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="dbid" ColumnName="dbid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_fallback_dev">
+      <EntityTypeMapping TypeName="masterModel.spt_fallback_dev">
+        <MappingFragment StoreEntitySet="spt_fallback_dev">
+          <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+          <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+          <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+          <ScalarProperty Name="xfallback_low" ColumnName="xfallback_low" />
+          <ScalarProperty Name="xfallback_drive" ColumnName="xfallback_drive" />
+          <ScalarProperty Name="low" ColumnName="low" />
+          <ScalarProperty Name="high" ColumnName="high" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phyname" ColumnName="phyname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_fallback_usg">
+      <EntityTypeMapping TypeName="masterModel.spt_fallback_usg">
+        <MappingFragment StoreEntitySet="spt_fallback_usg">
+          <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+          <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+          <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+          <ScalarProperty Name="xfallback_vstart" ColumnName="xfallback_vstart" />
+          <ScalarProperty Name="dbid" ColumnName="dbid" />
+          <ScalarProperty Name="segmap" ColumnName="segmap" />
+          <ScalarProperty Name="lstart" ColumnName="lstart" />
+          <ScalarProperty Name="sizepg" ColumnName="sizepg" />
+          <ScalarProperty Name="vstart" ColumnName="vstart" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_monitor">
+      <EntityTypeMapping TypeName="masterModel.spt_monitor">
+        <MappingFragment StoreEntitySet="spt_monitor">
+          <ScalarProperty Name="lastrun" ColumnName="lastrun" />
+          <ScalarProperty Name="cpu_busy" ColumnName="cpu_busy" />
+          <ScalarProperty Name="io_busy" ColumnName="io_busy" />
+          <ScalarProperty Name="idle" ColumnName="idle" />
+          <ScalarProperty Name="pack_received" ColumnName="pack_received" />
+          <ScalarProperty Name="pack_sent" ColumnName="pack_sent" />
+          <ScalarProperty Name="connections" ColumnName="connections" />
+          <ScalarProperty Name="pack_errors" ColumnName="pack_errors" />
+          <ScalarProperty Name="total_read" ColumnName="total_read" />
+          <ScalarProperty Name="total_write" ColumnName="total_write" />
+          <ScalarProperty Name="total_errors" ColumnName="total_errors" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_values">
+      <EntityTypeMapping TypeName="masterModel.spt_values">
+        <MappingFragment StoreEntitySet="spt_values">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="low" ColumnName="low" />
+          <ScalarProperty Name="high" ColumnName="high" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

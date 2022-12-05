@@ -1,0 +1,3520 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "AfriCircleImage/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/AfriCircleImage.dll": {}
+        },
+        "runtime": {
+          "lib/AfriCircleImage.dll": {}
+        }
+      },
+      "DrawnTable/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/DrawnTableControl.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DrawnTableControl.dll": {}
+        }
+      },
+      "E.Deezer/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Net.Http": "4.3.2"
+        },
+        "compile": {
+          "lib/net45/E.Deezer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/E.Deezer.dll": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "FGS.Collections.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.0.0, 6.5.0)"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Collections.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Linq.Extensions.EntityFramework6": "2020.8.3.2",
+          "FGS.Linq.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.46": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "MaterialSkin/0.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/MaterialSkin.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "morelinq/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net451/MoreLinq.dll": {}
+        },
+        "runtime": {
+          "lib/net451/MoreLinq.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PictureBoxExtended/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/PictureBoxExtended.dll": {}
+        },
+        "runtime": {
+          "lib/PictureBoxExtended.dll": {}
+        }
+      },
+      "RestSharp/108.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "RoundCornerProgressBar/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Net.Http.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "osx"
+          },
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Text.Encodings.Web/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "AgilityExtensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        }
+      },
+      "EyeOpen.Imaging/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        }
+      },
+      "ObjAlbum/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AgilityExtensions": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "ObjWebScrap": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        }
+      },
+      "ObjCompareImages/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        }
+      },
+      "ObjDeezer/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "E.Deezer": "4.2.2",
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        }
+      },
+      "ObjPrestoWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjAlbum": "1.0.0",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        }
+      },
+      "ObjRepositoryP2003/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        }
+      },
+      "ObjUtil/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/ObjUtil.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjUtil.dll": {}
+        }
+      },
+      "ObjWebScrap/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "AfriCircleImage/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/AfriCircleImage.dll": {}
+        },
+        "runtime": {
+          "lib/AfriCircleImage.dll": {}
+        }
+      },
+      "DrawnTable/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/DrawnTableControl.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DrawnTableControl.dll": {}
+        }
+      },
+      "E.Deezer/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Net.Http": "4.3.2"
+        },
+        "compile": {
+          "lib/net45/E.Deezer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/E.Deezer.dll": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "FGS.Collections.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.0.0, 6.5.0)"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Collections.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Linq.Extensions.EntityFramework6": "2020.8.3.2",
+          "FGS.Linq.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.46": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "MaterialSkin/0.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/MaterialSkin.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "morelinq/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net451/MoreLinq.dll": {}
+        },
+        "runtime": {
+          "lib/net451/MoreLinq.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PictureBoxExtended/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/PictureBoxExtended.dll": {}
+        },
+        "runtime": {
+          "lib/PictureBoxExtended.dll": {}
+        }
+      },
+      "RestSharp/108.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "RoundCornerProgressBar/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net46/System.Net.Http.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "AgilityExtensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        }
+      },
+      "EyeOpen.Imaging/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        }
+      },
+      "ObjAlbum/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AgilityExtensions": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "ObjWebScrap": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        }
+      },
+      "ObjCompareImages/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        }
+      },
+      "ObjDeezer/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "E.Deezer": "4.2.2",
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        }
+      },
+      "ObjPrestoWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjAlbum": "1.0.0",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        }
+      },
+      "ObjRepositoryP2003/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        }
+      },
+      "ObjUtil/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/ObjUtil.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjUtil.dll": {}
+        }
+      },
+      "ObjWebScrap/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "AfriCircleImage/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/AfriCircleImage.dll": {}
+        },
+        "runtime": {
+          "lib/AfriCircleImage.dll": {}
+        }
+      },
+      "DrawnTable/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/DrawnTableControl.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DrawnTableControl.dll": {}
+        }
+      },
+      "E.Deezer/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Net.Http": "4.3.2"
+        },
+        "compile": {
+          "lib/net45/E.Deezer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/E.Deezer.dll": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "FGS.Collections.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.0.0, 6.5.0)"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Collections.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Linq.Extensions.EntityFramework6": "2020.8.3.2",
+          "FGS.Linq.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.46": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "MaterialSkin/0.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/MaterialSkin.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "morelinq/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net451/MoreLinq.dll": {}
+        },
+        "runtime": {
+          "lib/net451/MoreLinq.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PictureBoxExtended/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/PictureBoxExtended.dll": {}
+        },
+        "runtime": {
+          "lib/PictureBoxExtended.dll": {}
+        }
+      },
+      "RestSharp/108.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "RoundCornerProgressBar/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Net.Http.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "AgilityExtensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        }
+      },
+      "EyeOpen.Imaging/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        }
+      },
+      "ObjAlbum/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AgilityExtensions": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "ObjWebScrap": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        }
+      },
+      "ObjCompareImages/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        }
+      },
+      "ObjDeezer/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "E.Deezer": "4.2.2",
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        }
+      },
+      "ObjPrestoWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjAlbum": "1.0.0",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        }
+      },
+      "ObjRepositoryP2003/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        }
+      },
+      "ObjUtil/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/ObjUtil.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjUtil.dll": {}
+        }
+      },
+      "ObjWebScrap/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "AfriCircleImage/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/AfriCircleImage.dll": {}
+        },
+        "runtime": {
+          "lib/AfriCircleImage.dll": {}
+        }
+      },
+      "DrawnTable/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/DrawnTableControl.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DrawnTableControl.dll": {}
+        }
+      },
+      "E.Deezer/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1",
+          "System.Net.Http": "4.3.2"
+        },
+        "compile": {
+          "lib/net45/E.Deezer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/E.Deezer.dll": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "FGS.Collections.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "[6.0.0, 6.5.0)"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.Abstractions/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Collections.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll": {}
+        }
+      },
+      "FGS.Linq.Extensions.Pagination.EntityFramework6/2020.8.3.2": {
+        "type": "package",
+        "dependencies": {
+          "FGS.Linq.Extensions.EntityFramework6": "2020.8.3.2",
+          "FGS.Linq.Extensions.Pagination.Abstractions": "2020.8.3.2"
+        },
+        "compile": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        },
+        "runtime": {
+          "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.46": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "HtmlAgilityPack.CssSelectors/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9"
+        },
+        "compile": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HtmlAgilityPack.CssSelectors.dll": {},
+          "lib/net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "MaterialSkin/0.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/MaterialSkin.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
+      "morelinq/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Data.DataSetExtensions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net451/MoreLinq.dll": {}
+        },
+        "runtime": {
+          "lib/net451/MoreLinq.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PictureBoxExtended/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/PictureBoxExtended.dll": {}
+        },
+        "runtime": {
+          "lib/PictureBoxExtended.dll": {}
+        }
+      },
+      "RestSharp/108.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "RoundCornerProgressBar/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        },
+        "runtime": {
+          "lib/net45/RoundCorneredProgressBar.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Net.Http/4.3.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Net.Http.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encodings.Web": "5.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Text.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net47/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net47/System.ValueTuple.dll": {}
+        }
+      },
+      "AgilityExtensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgilityExtensions.dll": {}
+        }
+      },
+      "EyeOpen.Imaging/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EyeOpen.Imaging.dll": {}
+        }
+      },
+      "ObjAlbum/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AgilityExtensions": "1.0.0",
+          "EntityFramework": "6.4.4",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "ObjWebScrap": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjAlbum.dll": {}
+        }
+      },
+      "ObjCompareImages/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjCompareImages.dll": {}
+        }
+      },
+      "ObjDeezer/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "E.Deezer": "4.2.2",
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjDeezer.dll": {}
+        }
+      },
+      "ObjPrestoWeb/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjAlbum": "1.0.0",
+          "ObjCompareImages": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjPrestoWeb.dll": {}
+        }
+      },
+      "ObjRepositoryP2003/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjRepositoryP2003.dll": {}
+        }
+      },
+      "ObjUtil/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/ObjUtil.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjUtil.dll": {}
+        }
+      },
+      "ObjWebScrap/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "EyeOpen.Imaging": "1.0.0",
+          "HtmlAgilityPack": "1.11.46",
+          "HtmlAgilityPack.CssSelectors": "1.0.2",
+          "ObjDeezer": "1.0.0",
+          "ObjRepositoryP2003": "1.0.0",
+          "ObjUtil": "1.0.0",
+          "RestSharp": "108.0.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjWebScrap.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AfriCircleImage/1.0.0": {
+      "sha512": "q1mjl55/c1FWRZ4DyVyUEPljpI2/wqHSKjUcb7PKk19vZvNnzfwovNZ5JvUPbsgcRzu0Rwbn5KHpHjOmSr6MMw==",
+      "type": "package",
+      "path": "africircleimage/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "africircleimage.1.0.0.nupkg.sha512",
+        "africircleimage.nuspec",
+        "lib/AfriCircleImage.dll"
+      ]
+    },
+    "DrawnTable/1.0.3": {
+      "sha512": "utYe/T/9YCnI95VPTW5YAtfVZ7rghy70W7RF9HqoidK4Jb1UKYaHyAylRonjaf0hRHKEavlk0Bjvg+gaj6iSBA==",
+      "type": "package",
+      "path": "drawntable/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "drawntable.1.0.3.nupkg.sha512",
+        "drawntable.nuspec",
+        "lib/net40/DrawnTableControl.dll",
+        "lib/net45/DrawnTableControl.dll",
+        "lib/net5.0-windows7.0/DrawnTableControl.dll"
+      ]
+    },
+    "E.Deezer/4.2.2": {
+      "sha512": "qP5Y8Xf/giph8HnGAjNFaBPvAwr/1apgOEhuwpMuDMHB68xQO2F5slr8nMoB7FDs8nKTa+4F7Tk1/GHUv7sEuA==",
+      "type": "package",
+      "path": "e.deezer/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "e.deezer.4.2.2.nupkg.sha512",
+        "e.deezer.nuspec",
+        "lib/net45/E.Deezer.dll",
+        "lib/netstandard1.1/E.Deezer.dll",
+        "lib/netstandard2.0/E.Deezer.dll"
+      ]
+    },
+    "EntityFramework/6.4.4": {
+      "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "type": "package",
+      "path": "entityframework/6.4.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/EntityFramework.DefaultItems.props",
+        "build/EntityFramework.props",
+        "build/EntityFramework.targets",
+        "build/Microsoft.Data.Entity.Build.Tasks.dll",
+        "build/netcoreapp3.0/EntityFramework.props",
+        "build/netcoreapp3.0/EntityFramework.targets",
+        "buildTransitive/EntityFramework.props",
+        "buildTransitive/EntityFramework.targets",
+        "buildTransitive/netcoreapp3.0/EntityFramework.props",
+        "buildTransitive/netcoreapp3.0/EntityFramework.targets",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "entityframework.6.4.4.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "lib/netstandard2.1/EntityFramework.SqlServer.dll",
+        "lib/netstandard2.1/EntityFramework.SqlServer.xml",
+        "lib/netstandard2.1/EntityFramework.dll",
+        "lib/netstandard2.1/EntityFramework.xml",
+        "tools/EntityFramework6.PS2.psd1",
+        "tools/EntityFramework6.PS2.psm1",
+        "tools/EntityFramework6.psd1",
+        "tools/EntityFramework6.psm1",
+        "tools/about_EntityFramework6.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/net40/any/ef6.exe",
+        "tools/net40/any/ef6.pdb",
+        "tools/net40/win-x86/ef6.exe",
+        "tools/net40/win-x86/ef6.pdb",
+        "tools/net45/any/ef6.exe",
+        "tools/net45/any/ef6.pdb",
+        "tools/net45/win-x86/ef6.exe",
+        "tools/net45/win-x86/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.dll",
+        "tools/netcoreapp3.0/any/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "FGS.Collections.Extensions.Pagination.Abstractions/2020.8.3.2": {
+      "sha512": "5ANMaRbYGcZEi24ytgZANKI2k9nzKGHG9zmyI+k84UrCMK9MfQrsEcLlBj4X4N8ct4JAPCzr8KOXeQ8tW2DCQQ==",
+      "type": "package",
+      "path": "fgs.collections.extensions.pagination.abstractions/2020.8.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fgs.collections.extensions.pagination.abstractions.2020.8.3.2.nupkg.sha512",
+        "fgs.collections.extensions.pagination.abstractions.nuspec",
+        "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.dll",
+        "lib/net472/FGS.Collections.Extensions.Pagination.Abstractions.xml",
+        "lib/netcoreapp3.0/FGS.Collections.Extensions.Pagination.Abstractions.dll",
+        "lib/netcoreapp3.0/FGS.Collections.Extensions.Pagination.Abstractions.xml",
+        "lib/netstandard2.0/FGS.Collections.Extensions.Pagination.Abstractions.dll",
+        "lib/netstandard2.0/FGS.Collections.Extensions.Pagination.Abstractions.xml",
+        "lib/netstandard2.1/FGS.Collections.Extensions.Pagination.Abstractions.dll",
+        "lib/netstandard2.1/FGS.Collections.Extensions.Pagination.Abstractions.xml"
+      ]
+    },
+    "FGS.Linq.Extensions.EntityFramework6/2020.8.3.2": {
+      "sha512": "hzjEvBqQsuxAgbC8Aa9O7cS/9XxPMGbYcuttbENvRJEXVo2pZUHHXHtySUw8miu2zLtCyBBjkS8qVbuLxx73Zg==",
+      "type": "package",
+      "path": "fgs.linq.extensions.entityframework6/2020.8.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fgs.linq.extensions.entityframework6.2020.8.3.2.nupkg.sha512",
+        "fgs.linq.extensions.entityframework6.nuspec",
+        "lib/net472/FGS.Linq.Extensions.EntityFramework6.dll",
+        "lib/net472/FGS.Linq.Extensions.EntityFramework6.xml",
+        "lib/netcoreapp3.0/FGS.Linq.Extensions.EntityFramework6.dll",
+        "lib/netcoreapp3.0/FGS.Linq.Extensions.EntityFramework6.xml",
+        "lib/netstandard2.1/FGS.Linq.Extensions.EntityFramework6.dll",
+        "lib/netstandard2.1/FGS.Linq.Extensions.EntityFramework6.xml"
+      ]
+    },
+    "FGS.Linq.Extensions.Pagination.Abstractions/2020.8.3.2": {
+      "sha512": "4B0r5JD8fyTNITUO9TSIZZAovbjgnkZKv8JMAKOS82jSzF9/8uXHXHOg8OsTsMagxJxnZyfXxYrA0BTvmTU2MQ==",
+      "type": "package",
+      "path": "fgs.linq.extensions.pagination.abstractions/2020.8.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fgs.linq.extensions.pagination.abstractions.2020.8.3.2.nupkg.sha512",
+        "fgs.linq.extensions.pagination.abstractions.nuspec",
+        "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.dll",
+        "lib/net472/FGS.Linq.Extensions.Pagination.Abstractions.xml",
+        "lib/netcoreapp3.0/FGS.Linq.Extensions.Pagination.Abstractions.dll",
+        "lib/netcoreapp3.0/FGS.Linq.Extensions.Pagination.Abstractions.xml",
+        "lib/netstandard2.0/FGS.Linq.Extensions.Pagination.Abstractions.dll",
+        "lib/netstandard2.0/FGS.Linq.Extensions.Pagination.Abstractions.xml",
+        "lib/netstandard2.1/FGS.Linq.Extensions.Pagination.Abstractions.dll",
+        "lib/netstandard2.1/FGS.Linq.Extensions.Pagination.Abstractions.xml"
+      ]
+    },
+    "FGS.Linq.Extensions.Pagination.EntityFramework6/2020.8.3.2": {
+      "sha512": "QGPckzcYI3nvBpm43po/aV+d61f0rlT5zAd8ddMTjsGf5dXcvsChylvocC5Jc2bMZZxBKbQLegADB5s4R8Lkmw==",
+      "type": "package",
+      "path": "fgs.linq.extensions.pagination.entityframework6/2020.8.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fgs.linq.extensions.pagination.entityframework6.2020.8.3.2.nupkg.sha512",
+        "fgs.linq.extensions.pagination.entityframework6.nuspec",
+        "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.dll",
+        "lib/net472/FGS.Linq.Extensions.Pagination.EntityFramework6.xml",
+        "lib/netcoreapp3.0/FGS.Linq.Extensions.Pagination.EntityFramework6.dll",
+        "lib/netcoreapp3.0/FGS.Linq.Extensions.Pagination.EntityFramework6.xml",
+        "lib/netstandard2.1/FGS.Linq.Extensions.Pagination.EntityFramework6.dll",
+        "lib/netstandard2.1/FGS.Linq.Extensions.Pagination.EntityFramework6.xml"
+      ]
+    },
+    "HtmlAgilityPack/1.11.46": {
+      "sha512": "dLMn4EVfJBHWmWK4Uh0XGD76FPLHI0qr2Tm0s1m/xmgiHb1JUb9zB8AzO8HtrkBBlMN6JfCUBYddhqC0hZNR+g==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.46",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.46.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
+    "HtmlAgilityPack.CssSelectors/1.0.2": {
+      "sha512": "bB4FeVvcNROENPWQfFSmPQ6q99jGk8ru5QoBB3qnEeaP451fjnqQ0uPuMgmWHAOZIXUAoOQozv/5fEEVSDyIzA==",
+      "type": "package",
+      "path": "htmlagilitypack.cssselectors/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.cssselectors.1.0.2.nupkg.sha512",
+        "htmlagilitypack.cssselectors.nuspec",
+        "lib/net45/HtmlAgilityPack.CssSelectors.dll",
+        "lib/net45/HtmlAgilityPack.CssSelectors.pdb",
+        "lib/net45/HtmlAgilityPack.dll",
+        "lib/net45/HtmlAgilityPack.xml"
+      ]
+    },
+    "MaterialSkin/0.2.1": {
+      "sha512": "/6AEh6qIeNKbxsha7IHBb5s50tyvB0iZuGQPB9mjyR+mRdfQ7vnKTklwI26Y/DbrymTcg+aBHSgCgAT7/qLIrQ==",
+      "type": "package",
+      "path": "materialskin/0.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MaterialSkin.dll",
+        "materialskin.0.2.1.nupkg.sha512",
+        "materialskin.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "morelinq/3.3.2": {
+      "sha512": "MQc8GppZJLmjvcpEdf3EkC6ovsp7gRWt2e5mC7dcIOrgwSc+yjFd3JQ0iRqr3XrUT6rb/phv0IkEmBtbfVA7AQ==",
+      "type": "package",
+      "path": "morelinq/3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.txt",
+        "lib/net451/MoreLinq.dll",
+        "lib/net451/MoreLinq.pdb",
+        "lib/net451/MoreLinq.xml",
+        "lib/netstandard1.0/MoreLinq.dll",
+        "lib/netstandard1.0/MoreLinq.pdb",
+        "lib/netstandard1.0/MoreLinq.xml",
+        "lib/netstandard2.0/MoreLinq.dll",
+        "lib/netstandard2.0/MoreLinq.pdb",
+        "lib/netstandard2.0/MoreLinq.xml",
+        "morelinq.3.3.2.nupkg.sha512",
+        "morelinq.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/11.0.1": {
+      "sha512": "pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
+      "type": "package",
+      "path": "newtonsoft.json/11.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "PictureBoxExtended/1.0.1": {
+      "sha512": "pggbOsvSBBVxjm4mpdTkk5pNcpX244uxYCcvHQfNhznMbrVIU5cjyM9dCredv981xn8ur9ngGqH1gw6qCqIRUA==",
+      "type": "package",
+      "path": "pictureboxextended/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/PictureBoxExtended.dll",
+        "pictureboxextended.1.0.1.nupkg.sha512",
+        "pictureboxextended.nuspec"
+      ]
+    },
+    "RestSharp/108.0.3": {
+      "sha512": "phq1AkVhqVXHZxvWDV4fJEJKCR5OHNFUGx2Ix8o5EFShS6654oZhth4X2RWvaU/W7UexIswW0T+lTirxfLU2Ow==",
+      "type": "package",
+      "path": "restsharp/108.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.108.0.3.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "RoundCornerProgressBar/1.0.0": {
+      "sha512": "kDLlFegzf2c40euJSjRaMwYmr6k8LrF6/wBxO55be5F8xNMY3edL/WNEiz7qW4/0sg8P/6JRHpi+cu55A2eupA==",
+      "type": "package",
+      "path": "roundcornerprogressbar/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/RoundCorneredProgressBar.dll",
+        "roundcornerprogressbar.1.0.0.nupkg.sha512",
+        "roundcornerprogressbar.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.IO/4.3.0": {
+      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "type": "package",
+      "path": "system.io/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.IO.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.IO.dll",
+        "ref/netcore50/System.IO.dll",
+        "ref/netcore50/System.IO.xml",
+        "ref/netcore50/de/System.IO.xml",
+        "ref/netcore50/es/System.IO.xml",
+        "ref/netcore50/fr/System.IO.xml",
+        "ref/netcore50/it/System.IO.xml",
+        "ref/netcore50/ja/System.IO.xml",
+        "ref/netcore50/ko/System.IO.xml",
+        "ref/netcore50/ru/System.IO.xml",
+        "ref/netcore50/zh-hans/System.IO.xml",
+        "ref/netcore50/zh-hant/System.IO.xml",
+        "ref/netstandard1.0/System.IO.dll",
+        "ref/netstandard1.0/System.IO.xml",
+        "ref/netstandard1.0/de/System.IO.xml",
+        "ref/netstandard1.0/es/System.IO.xml",
+        "ref/netstandard1.0/fr/System.IO.xml",
+        "ref/netstandard1.0/it/System.IO.xml",
+        "ref/netstandard1.0/ja/System.IO.xml",
+        "ref/netstandard1.0/ko/System.IO.xml",
+        "ref/netstandard1.0/ru/System.IO.xml",
+        "ref/netstandard1.0/zh-hans/System.IO.xml",
+        "ref/netstandard1.0/zh-hant/System.IO.xml",
+        "ref/netstandard1.3/System.IO.dll",
+        "ref/netstandard1.3/System.IO.xml",
+        "ref/netstandard1.3/de/System.IO.xml",
+        "ref/netstandard1.3/es/System.IO.xml",
+        "ref/netstandard1.3/fr/System.IO.xml",
+        "ref/netstandard1.3/it/System.IO.xml",
+        "ref/netstandard1.3/ja/System.IO.xml",
+        "ref/netstandard1.3/ko/System.IO.xml",
+        "ref/netstandard1.3/ru/System.IO.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.xml",
+        "ref/netstandard1.5/System.IO.dll",
+        "ref/netstandard1.5/System.IO.xml",
+        "ref/netstandard1.5/de/System.IO.xml",
+        "ref/netstandard1.5/es/System.IO.xml",
+        "ref/netstandard1.5/fr/System.IO.xml",
+        "ref/netstandard1.5/it/System.IO.xml",
+        "ref/netstandard1.5/ja/System.IO.xml",
+        "ref/netstandard1.5/ko/System.IO.xml",
+        "ref/netstandard1.5/ru/System.IO.xml",
+        "ref/netstandard1.5/zh-hans/System.IO.xml",
+        "ref/netstandard1.5/zh-hant/System.IO.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.io.4.3.0.nupkg.sha512",
+        "system.io.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Net.Http/4.3.2": {
+      "sha512": "y7hv0o0weI0j0mvEcBOdt1F3CAADiWlcw3e54m8TfYiRmBPDIsHElx8QUPDlY4x6yWXKPGN0Z2TuXCTPgkm5WQ==",
+      "type": "package",
+      "path": "system.net.http/4.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/Xamarinmac20/_._",
+        "lib/monoandroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Net.Http.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/Xamarinmac20/_._",
+        "ref/monoandroid10/_._",
+        "ref/monotouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Net.Http.dll",
+        "ref/netcore50/System.Net.Http.dll",
+        "ref/netstandard1.1/System.Net.Http.dll",
+        "ref/netstandard1.3/System.Net.Http.dll",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll",
+        "runtimes/win/lib/net46/System.Net.Http.dll",
+        "runtimes/win/lib/netcore50/System.Net.Http.dll",
+        "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
+        "system.net.http.4.3.2.nupkg.sha512",
+        "system.net.http.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "type": "package",
+      "path": "system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Runtime.dll",
+        "lib/portable-net45+win8+wp80+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.0/System.Runtime.dll",
+        "ref/netstandard1.0/System.Runtime.xml",
+        "ref/netstandard1.0/de/System.Runtime.xml",
+        "ref/netstandard1.0/es/System.Runtime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.xml",
+        "ref/netstandard1.0/it/System.Runtime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.2/System.Runtime.dll",
+        "ref/netstandard1.2/System.Runtime.xml",
+        "ref/netstandard1.2/de/System.Runtime.xml",
+        "ref/netstandard1.2/es/System.Runtime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.xml",
+        "ref/netstandard1.2/it/System.Runtime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.3/System.Runtime.dll",
+        "ref/netstandard1.3/System.Runtime.xml",
+        "ref/netstandard1.3/de/System.Runtime.xml",
+        "ref/netstandard1.3/es/System.Runtime.xml",
+        "ref/netstandard1.3/fr/System.Runtime.xml",
+        "ref/netstandard1.3/it/System.Runtime.xml",
+        "ref/netstandard1.3/ja/System.Runtime.xml",
+        "ref/netstandard1.3/ko/System.Runtime.xml",
+        "ref/netstandard1.3/ru/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.5/System.Runtime.dll",
+        "ref/netstandard1.5/System.Runtime.xml",
+        "ref/netstandard1.5/de/System.Runtime.xml",
+        "ref/netstandard1.5/es/System.Runtime.xml",
+        "ref/netstandard1.5/fr/System.Runtime.xml",
+        "ref/netstandard1.5/it/System.Runtime.xml",
+        "ref/netstandard1.5/ja/System.Runtime.xml",
+        "ref/netstandard1.5/ko/System.Runtime.xml",
+        "ref/netstandard1.5/ru/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
+        "ref/portable-net45+win8+wp80+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.Algorithms/4.3.0": {
+      "sha512": "W1kd2Y8mYSCgc3ULTAZ0hOP2dSdG5YauTb1089T0/kRcN2MpSAW1izOFROrJgxSlMn3ArsgHXagigyi+ibhevg==",
+      "type": "package",
+      "path": "system.security.cryptography.algorithms/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Algorithms.dll",
+        "lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "lib/net463/System.Security.Cryptography.Algorithms.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Algorithms.dll",
+        "ref/net461/System.Security.Cryptography.Algorithms.dll",
+        "ref/net463/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+        "system.security.cryptography.algorithms.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Encoding/4.3.0": {
+      "sha512": "1DEWjZZly9ae9C79vFwqaO5kaOlI5q+3/55ohmq/7dpDyDfc8lYe7YVxJUZ5MF/NtbkRjwFRo14yM4OEo9EmDw==",
+      "type": "package",
+      "path": "system.security.cryptography.encoding/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Encoding.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Encoding.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/de/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/es/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/fr/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/it/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ja/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ko/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ru/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Cryptography.Encoding.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "system.security.cryptography.encoding.4.3.0.nupkg.sha512",
+        "system.security.cryptography.encoding.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Primitives/4.3.0": {
+      "sha512": "7bDIyVFNL/xKeFHjhobUAQqSpJq9YTOpbEs6mR233Et01STBMXNAc/V+BM6dwYGc95gVh/Zf+iVXWzj3mE8DWg==",
+      "type": "package",
+      "path": "system.security.cryptography.primitives/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Primitives.dll",
+        "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Primitives.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Primitives.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+        "system.security.cryptography.primitives.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.X509Certificates/4.3.0": {
+      "sha512": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
+      "type": "package",
+      "path": "system.security.cryptography.x509certificates/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.X509Certificates.dll",
+        "lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.X509Certificates.dll",
+        "ref/net461/System.Security.Cryptography.X509Certificates.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.X509Certificates.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/de/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/es/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/fr/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/it/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/ja/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/ko/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/ru/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll",
+        "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/de/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/es/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/fr/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/it/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/ja/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/ko/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/ru/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/zh-hans/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/zh-hant/System.Security.Cryptography.X509Certificates.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/netcore50/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll",
+        "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
+        "system.security.cryptography.x509certificates.nuspec"
+      ]
+    },
+    "System.Text.Encodings.Web/5.0.0": {
+      "sha512": "EEslUvHKll1ftizbn20mX3Ix/l4Ygk/bdJ2LY6/X6FlGaP0RIhKMo9nS6JIGnKKT6KBP2PGj6JC3B9/ZF6ErqQ==",
+      "type": "package",
+      "path": "system.text.encodings.web/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.5.0.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/5.0.1": {
+      "sha512": "/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
+      "type": "package",
+      "path": "system.text.json/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.1.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "AgilityExtensions/1.0.0": {
+      "type": "project",
+      "path": "../../../../../../../../wrk/presto.2023/backend/win/mongodb/AgilityExtensions/AgilityExtensions.csproj",
+      "msbuildProject": "../../../../../../../../wrk/presto.2023/backend/win/mongodb/AgilityExtensions/AgilityExtensions.csproj"
+    },
+    "EyeOpen.Imaging/1.0.0": {
+      "type": "project",
+      "path": "../../../../../../../../wrk/presto.2023/backend/win/helpers/Imaging/EyeOpen.Imaging.csproj",
+      "msbuildProject": "../../../../../../../../wrk/presto.2023/backend/win/helpers/Imaging/EyeOpen.Imaging.csproj"
+    },
+    "ObjAlbum/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/Objects/ObjAlbum/ObjAlbum.vbproj",
+      "msbuildProject": "../../../../../obj/Objects/ObjAlbum/ObjAlbum.vbproj"
+    },
+    "ObjCompareImages/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/ObjCompareImages/ObjCompareImages.vbproj",
+      "msbuildProject": "../../../../../obj/ObjCompareImages/ObjCompareImages.vbproj"
+    },
+    "ObjDeezer/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/Objects/ObjDeezer/ObjDeezer.vbproj",
+      "msbuildProject": "../../../../../obj/Objects/ObjDeezer/ObjDeezer.vbproj"
+    },
+    "ObjPrestoWeb/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/ObjPrestoWeb/ObjPrestoWeb.vbproj",
+      "msbuildProject": "../../../../../obj/ObjPrestoWeb/ObjPrestoWeb.vbproj"
+    },
+    "ObjRepositoryP2003/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/ObjRepositoryP2003/ObjRepositoryP2003/ObjRepositoryP2003.vbproj",
+      "msbuildProject": "../../../../../obj/ObjRepositoryP2003/ObjRepositoryP2003/ObjRepositoryP2003.vbproj"
+    },
+    "ObjUtil/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/ObjUtil/ObjUtil.vbproj",
+      "msbuildProject": "../../../../../obj/ObjUtil/ObjUtil.vbproj"
+    },
+    "ObjWebScrap/1.0.0": {
+      "type": "project",
+      "path": "../../../../../obj/Objects/Objects/ObjWebScrap/ObjWebScrap.vbproj",
+      "msbuildProject": "../../../../../obj/Objects/Objects/ObjWebScrap/ObjWebScrap.vbproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "AfriCircleImage >= 1.0.0",
+      "DrawnTable >= 1.0.3",
+      "EntityFramework >= 6.4.4",
+      "FGS.Linq.Extensions.Pagination.EntityFramework6 >= 2020.8.3.2",
+      "MaterialSkin >= 0.2.1",
+      "ObjAlbum >= 1.0.0",
+      "ObjPrestoWeb >= 1.0.0",
+      "ObjUtil >= 1.0.0",
+      "ObjWebScrap >= 1.0.0",
+      "PictureBoxExtended >= 1.0.1",
+      "RoundCornerProgressBar >= 1.0.0",
+      "morelinq >= 3.3.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Intel i9\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\Mant2023.vbproj",
+      "projectName": "Mant2023",
+      "projectPath": "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\Mant2023.vbproj",
+      "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+      "outputPath": "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj": {
+              "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj"
+            },
+            "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj": {
+              "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj"
+            },
+            "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj": {
+              "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj"
+            },
+            "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+              "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "AfriCircleImage": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "DrawnTable": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.4.4, )"
+          },
+          "FGS.Linq.Extensions.Pagination.EntityFramework6": {
+            "target": "Package",
+            "version": "[2020.8.3.2, )"
+          },
+          "MaterialSkin": {
+            "target": "Package",
+            "version": "[0.2.1, )"
+          },
+          "PictureBoxExtended": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "RoundCornerProgressBar": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "morelinq": {
+            "target": "Package",
+            "version": "[3.3.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

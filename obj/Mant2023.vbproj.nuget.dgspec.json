@@ -1,0 +1,622 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\Mant2023.vbproj": {}
+  },
+  "projects": {
+    "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj": {
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj",
+        "projectName": "ObjCompareImages",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj": {
+                "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj",
+        "projectName": "ObjAlbum",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj"
+              },
+              "C:\\wrk\\presto.2023\\backend\\win\\mongodb\\AgilityExtensions\\AgilityExtensions.csproj": {
+                "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\mongodb\\AgilityExtensions\\AgilityExtensions.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj",
+        "projectName": "ObjDeezer",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj"
+              },
+              "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj": {
+                "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "E.Deezer": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj",
+        "projectName": "ObjWebScrap",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjDeezer\\ObjDeezer.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj"
+              },
+              "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj": {
+                "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj",
+        "projectName": "ObjPrestoWeb",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjCompareImages\\ObjCompareImages.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj",
+        "projectName": "ObjRepositoryP2003",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\ObjRepositoryP2003.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjRepositoryP2003\\ObjRepositoryP2003\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj",
+        "projectName": "ObjUtil",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj": {
+                "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\Mant2023.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\Mant2023.vbproj",
+        "projectName": "Mant2023",
+        "projectPath": "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\Mant2023.vbproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk2023\\classica\\backend\\win\\omplePresto2023\\progrmaUnificat\\Mant2023\\Mant2023\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\ObjAlbum\\ObjAlbum.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\Objects\\Objects\\ObjWebScrap\\ObjWebScrap.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjPrestoWeb\\ObjPrestoWeb.vbproj"
+              },
+              "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj": {
+                "projectPath": "C:\\wrk2023\\classica\\backend\\obj\\ObjUtil\\ObjUtil.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "AfriCircleImage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "DrawnTable": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "FGS.Linq.Extensions.Pagination.EntityFramework6": {
+              "target": "Package",
+              "version": "[2020.8.3.2, )"
+            },
+            "MaterialSkin": {
+              "target": "Package",
+              "version": "[0.2.1, )"
+            },
+            "PictureBoxExtended": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "RoundCornerProgressBar": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "morelinq": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj",
+        "projectName": "EyeOpen.Imaging",
+        "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\helpers\\Imaging\\EyeOpen.Imaging.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\wrk\\presto.2023\\backend\\win\\mongodb\\AgilityExtensions\\AgilityExtensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk\\presto.2023\\backend\\win\\mongodb\\AgilityExtensions\\AgilityExtensions.csproj",
+        "projectName": "AgilityExtensions",
+        "projectPath": "C:\\wrk\\presto.2023\\backend\\win\\mongodb\\AgilityExtensions\\AgilityExtensions.csproj",
+        "packagesPath": "C:\\Users\\Intel i9\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk\\presto.2023\\backend\\win\\mongodb\\AgilityExtensions\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel i9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "HtmlAgilityPack.CssSelectors": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

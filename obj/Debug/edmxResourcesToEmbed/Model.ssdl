@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CORE_artist">
+    <Key>
+      <PropertyRef Name="idMN" />
+    </Key>
+    <Property Name="idMN" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="nameMN" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="urlSource" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="ranking" Type="int" Nullable="false" />
+    <Property Name="urlImage" Type="varchar" MaxLength="200" />
+    <Property Name="biographpy" Type="varchar(max)" />
+    <Property Name="beginDate" Type="datetime" />
+    <Property Name="genre" Type="varchar" MaxLength="50" />
+    <Property Name="lastUpdated" Type="datetime" />
+    <Property Name="idArtistDZ" Type="int" />
+    <Property Name="widthImage" Type="int" />
+    <Property Name="heightImage" Type="int" />
+  </EntityType>
+  <EntityType Name="mc_composition">
+    <Key>
+      <PropertyRef Name="idWork" />
+    </Key>
+    <Property Name="idWork" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="nameWork" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="idComposerMN" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="composedDate" Type="varchar" MaxLength="50" />
+    <Property Name="urlSource" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="workGenre" Type="varchar" MaxLength="50" />
+    <Property Name="workType" Type="varchar" MaxLength="50" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="descriptionAuthor" Type="varchar" MaxLength="50" />
+    <Property Name="featured" Type="varchar" MaxLength="50" />
+    <Property Name="performancesCount" Type="int" />
+    <Property Name="atAgeOf" Type="varchar" MaxLength="20" />
+    <Property Name="lastProcesed" Type="datetime" />
+  </EntityType>
+  <EntityType Name="mc_composition_parts">
+    <Key>
+      <PropertyRef Name="idWork" />
+      <PropertyRef Name="idWorkOrd" />
+    </Key>
+    <Property Name="idWork" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="idWorkOrd" Type="int" Nullable="false" />
+    <Property Name="nameWorkItem" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="avgDuration" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mn_composer">
+    <Key>
+      <PropertyRef Name="idComposer" />
+    </Key>
+    <Property Name="idComposer" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="urlSource" Type="varchar" MaxLength="2000" Nullable="false" />
+    <Property Name="lastUpdated" Type="datetime" Nullable="false" />
+    <Property Name="begin_date" Type="datetime" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="ranking" Type="int" />
+    <Property Name="biography" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="mn_composer_rel">
+    <Key>
+      <PropertyRef Name="idComposer" />
+      <PropertyRef Name="idRelTip" />
+      <PropertyRef Name="idComposerRel" />
+    </Key>
+    <Property Name="idComposer" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="idRelTip" Type="int" Nullable="false" />
+    <Property Name="idComposerRel" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="nOrd" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mn_relTip">
+    <Key>
+      <PropertyRef Name="idRelTip" />
+    </Key>
+    <Property Name="idRelTip" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.MSreplication_options' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="value" Type="bit" Nullable="false" />
+    <Property Name="major_version" Type="int" Nullable="false" />
+    <Property Name="minor_version" Type="int" Nullable="false" />
+    <Property Name="revision" Type="int" Nullable="false" />
+    <Property Name="install_failures" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_fallback_db' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_dbid" Type="smallint" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="dbid" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="version" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_fallback_dev' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_low" Type="int" />
+    <Property Name="xfallback_drive" Type="char" MaxLength="2" />
+    <Property Name="low" Type="int" Nullable="false" />
+    <Property Name="high" Type="int" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="phyname" Type="varchar" MaxLength="127" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_fallback_usg' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_vstart" Type="int" />
+    <Property Name="dbid" Type="smallint" Nullable="false" />
+    <Property Name="segmap" Type="int" Nullable="false" />
+    <Property Name="lstart" Type="int" Nullable="false" />
+    <Property Name="sizepg" Type="int" Nullable="false" />
+    <Property Name="vstart" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_monitor' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="datetime" Nullable="false" />
+    <Property Name="cpu_busy" Type="int" Nullable="false" />
+    <Property Name="io_busy" Type="int" Nullable="false" />
+    <Property Name="idle" Type="int" Nullable="false" />
+    <Property Name="pack_received" Type="int" Nullable="false" />
+    <Property Name="pack_sent" Type="int" Nullable="false" />
+    <Property Name="connections" Type="int" Nullable="false" />
+    <Property Name="pack_errors" Type="int" Nullable="false" />
+    <Property Name="total_read" Type="int" Nullable="false" />
+    <Property Name="total_write" Type="int" Nullable="false" />
+    <Property Name="total_errors" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_values' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="spt_values">
+    <Key>
+      <PropertyRef Name="number" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="35" />
+    <Property Name="number" Type="int" Nullable="false" />
+    <Property Name="type" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="low" Type="int" />
+    <Property Name="high" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <Association Name="FK_CORE_work_idComposerMN">
+    <End Role="CORE_artist" Type="Self.CORE_artist" Multiplicity="1" />
+    <End Role="mc_composition" Type="Self.mc_composition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CORE_artist">
+        <PropertyRef Name="idMN" />
+      </Principal>
+      <Dependent Role="mc_composition">
+        <PropertyRef Name="idComposerMN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mn_composer_rel_mn_composer_idComposer">
+    <End Role="mn_composer" Type="Self.mn_composer" Multiplicity="1" />
+    <End Role="mn_composer_rel" Type="Self.mn_composer_rel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mn_composer">
+        <PropertyRef Name="idComposer" />
+      </Principal>
+      <Dependent Role="mn_composer_rel">
+        <PropertyRef Name="idComposer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mn_composer_rel_mn_relTip_idRelTip">
+    <End Role="mn_relTip" Type="Self.mn_relTip" Multiplicity="1" />
+    <End Role="mn_composer_rel" Type="Self.mn_composer_rel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mn_relTip">
+        <PropertyRef Name="idRelTip" />
+      </Principal>
+      <Dependent Role="mn_composer_rel">
+        <PropertyRef Name="idRelTip" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="masterModelStoreContainer">
+    <EntitySet Name="CORE_artist" EntityType="Self.CORE_artist" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mc_composition" EntityType="Self.mc_composition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mc_composition_parts" EntityType="Self.mc_composition_parts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mn_composer" EntityType="Self.mn_composer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mn_composer_rel" EntityType="Self.mn_composer_rel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mn_relTip" EntityType="Self.mn_relTip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MSreplication_options" EntityType="Self.MSreplication_options" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MSreplication_options].[optname] AS [optname], 
+    [MSreplication_options].[value] AS [value], 
+    [MSreplication_options].[major_version] AS [major_version], 
+    [MSreplication_options].[minor_version] AS [minor_version], 
+    [MSreplication_options].[revision] AS [revision], 
+    [MSreplication_options].[install_failures] AS [install_failures]
+    FROM [dbo].[MSreplication_options] AS [MSreplication_options]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_db" EntityType="Self.spt_fallback_db" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_fallback_db].[xserver_name] AS [xserver_name], 
+    [spt_fallback_db].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_db].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_db].[xfallback_dbid] AS [xfallback_dbid], 
+    [spt_fallback_db].[name] AS [name], 
+    [spt_fallback_db].[dbid] AS [dbid], 
+    [spt_fallback_db].[status] AS [status], 
+    [spt_fallback_db].[version] AS [version]
+    FROM [dbo].[spt_fallback_db] AS [spt_fallback_db]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_dev" EntityType="Self.spt_fallback_dev" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_fallback_dev].[xserver_name] AS [xserver_name], 
+    [spt_fallback_dev].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_dev].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_dev].[xfallback_low] AS [xfallback_low], 
+    [spt_fallback_dev].[xfallback_drive] AS [xfallback_drive], 
+    [spt_fallback_dev].[low] AS [low], 
+    [spt_fallback_dev].[high] AS [high], 
+    [spt_fallback_dev].[status] AS [status], 
+    [spt_fallback_dev].[name] AS [name], 
+    [spt_fallback_dev].[phyname] AS [phyname]
+    FROM [dbo].[spt_fallback_dev] AS [spt_fallback_dev]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_usg" EntityType="Self.spt_fallback_usg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_fallback_usg].[xserver_name] AS [xserver_name], 
+    [spt_fallback_usg].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_usg].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_usg].[xfallback_vstart] AS [xfallback_vstart], 
+    [spt_fallback_usg].[dbid] AS [dbid], 
+    [spt_fallback_usg].[segmap] AS [segmap], 
+    [spt_fallback_usg].[lstart] AS [lstart], 
+    [spt_fallback_usg].[sizepg] AS [sizepg], 
+    [spt_fallback_usg].[vstart] AS [vstart]
+    FROM [dbo].[spt_fallback_usg] AS [spt_fallback_usg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_monitor" EntityType="Self.spt_monitor" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_monitor].[lastrun] AS [lastrun], 
+    [spt_monitor].[cpu_busy] AS [cpu_busy], 
+    [spt_monitor].[io_busy] AS [io_busy], 
+    [spt_monitor].[idle] AS [idle], 
+    [spt_monitor].[pack_received] AS [pack_received], 
+    [spt_monitor].[pack_sent] AS [pack_sent], 
+    [spt_monitor].[connections] AS [connections], 
+    [spt_monitor].[pack_errors] AS [pack_errors], 
+    [spt_monitor].[total_read] AS [total_read], 
+    [spt_monitor].[total_write] AS [total_write], 
+    [spt_monitor].[total_errors] AS [total_errors]
+    FROM [dbo].[spt_monitor] AS [spt_monitor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_values" EntityType="Self.spt_values" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [spt_values].[name] AS [name], 
+    [spt_values].[number] AS [number], 
+    [spt_values].[type] AS [type], 
+    [spt_values].[low] AS [low], 
+    [spt_values].[high] AS [high], 
+    [spt_values].[status] AS [status]
+    FROM [dbo].[spt_values] AS [spt_values]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CORE_work_idComposerMN" Association="Self.FK_CORE_work_idComposerMN">
+      <End Role="CORE_artist" EntitySet="CORE_artist" />
+      <End Role="mc_composition" EntitySet="mc_composition" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mn_composer_rel_mn_composer_idComposer" Association="Self.FK_mn_composer_rel_mn_composer_idComposer">
+      <End Role="mn_composer" EntitySet="mn_composer" />
+      <End Role="mn_composer_rel" EntitySet="mn_composer_rel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mn_composer_rel_mn_relTip_idRelTip" Association="Self.FK_mn_composer_rel_mn_relTip_idRelTip">
+      <End Role="mn_relTip" EntitySet="mn_relTip" />
+      <End Role="mn_composer_rel" EntitySet="mn_composer_rel" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

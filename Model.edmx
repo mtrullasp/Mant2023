@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CORE_artist">
+          <Key>
+            <PropertyRef Name="idMN" />
+          </Key>
+          <Property Name="idMN" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="nameMN" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="urlSource" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="ranking" Type="int" Nullable="false" />
+          <Property Name="urlImage" Type="varchar" MaxLength="200" />
+          <Property Name="biographpy" Type="varchar(max)" />
+          <Property Name="beginDate" Type="datetime" />
+          <Property Name="genre" Type="varchar" MaxLength="50" />
+          <Property Name="lastUpdated" Type="datetime" />
+          <Property Name="idArtistDZ" Type="int" />
+          <Property Name="widthImage" Type="int" />
+          <Property Name="heightImage" Type="int" />
+        </EntityType>
+        <EntityType Name="mc_composition">
+          <Key>
+            <PropertyRef Name="idWork" />
+          </Key>
+          <Property Name="idWork" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="nameWork" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="idComposerMN" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="composedDate" Type="varchar" MaxLength="50" />
+          <Property Name="urlSource" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="workGenre" Type="varchar" MaxLength="50" />
+          <Property Name="workType" Type="varchar" MaxLength="50" />
+          <Property Name="description" Type="nvarchar(max)" />
+          <Property Name="descriptionAuthor" Type="varchar" MaxLength="50" />
+          <Property Name="featured" Type="varchar" MaxLength="50" />
+          <Property Name="performancesCount" Type="int" />
+          <Property Name="atAgeOf" Type="varchar" MaxLength="20" />
+          <Property Name="lastProcesed" Type="datetime" />
+        </EntityType>
+        <EntityType Name="mc_composition_parts">
+          <Key>
+            <PropertyRef Name="idWork" />
+            <PropertyRef Name="idWorkOrd" />
+          </Key>
+          <Property Name="idWork" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="idWorkOrd" Type="int" Nullable="false" />
+          <Property Name="nameWorkItem" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="avgDuration" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="mn_composer">
+          <Key>
+            <PropertyRef Name="idComposer" />
+          </Key>
+          <Property Name="idComposer" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="urlSource" Type="varchar" MaxLength="2000" Nullable="false" />
+          <Property Name="lastUpdated" Type="datetime" Nullable="false" />
+          <Property Name="begin_date" Type="datetime" />
+          <Property Name="end_date" Type="datetime" />
+          <Property Name="ranking" Type="int" />
+          <Property Name="biography" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="mn_composer_rel">
+          <Key>
+            <PropertyRef Name="idComposer" />
+            <PropertyRef Name="idRelTip" />
+            <PropertyRef Name="idComposerRel" />
+          </Key>
+          <Property Name="idComposer" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="idRelTip" Type="int" Nullable="false" />
+          <Property Name="idComposerRel" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="nOrd" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="mn_relTip">
+          <Key>
+            <PropertyRef Name="idRelTip" />
+          </Key>
+          <Property Name="idRelTip" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.MSreplication_options' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="MSreplication_options">
+          <Key>
+            <PropertyRef Name="optname" />
+            <PropertyRef Name="value" />
+            <PropertyRef Name="major_version" />
+            <PropertyRef Name="minor_version" />
+            <PropertyRef Name="revision" />
+            <PropertyRef Name="install_failures" />
+          </Key>
+          <Property Name="optname" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="value" Type="bit" Nullable="false" />
+          <Property Name="major_version" Type="int" Nullable="false" />
+          <Property Name="minor_version" Type="int" Nullable="false" />
+          <Property Name="revision" Type="int" Nullable="false" />
+          <Property Name="install_failures" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_fallback_db' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="spt_fallback_db">
+          <Key>
+            <PropertyRef Name="xserver_name" />
+            <PropertyRef Name="xdttm_ins" />
+            <PropertyRef Name="xdttm_last_ins_upd" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="dbid" />
+            <PropertyRef Name="status" />
+            <PropertyRef Name="version" />
+          </Key>
+          <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+          <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+          <Property Name="xfallback_dbid" Type="smallint" />
+          <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="dbid" Type="smallint" Nullable="false" />
+          <Property Name="status" Type="smallint" Nullable="false" />
+          <Property Name="version" Type="smallint" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_fallback_dev' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="spt_fallback_dev">
+          <Key>
+            <PropertyRef Name="xserver_name" />
+            <PropertyRef Name="xdttm_ins" />
+            <PropertyRef Name="xdttm_last_ins_upd" />
+            <PropertyRef Name="low" />
+            <PropertyRef Name="high" />
+            <PropertyRef Name="status" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="phyname" />
+          </Key>
+          <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+          <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+          <Property Name="xfallback_low" Type="int" />
+          <Property Name="xfallback_drive" Type="char" MaxLength="2" />
+          <Property Name="low" Type="int" Nullable="false" />
+          <Property Name="high" Type="int" Nullable="false" />
+          <Property Name="status" Type="smallint" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="phyname" Type="varchar" MaxLength="127" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_fallback_usg' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="spt_fallback_usg">
+          <Key>
+            <PropertyRef Name="xserver_name" />
+            <PropertyRef Name="xdttm_ins" />
+            <PropertyRef Name="xdttm_last_ins_upd" />
+            <PropertyRef Name="dbid" />
+            <PropertyRef Name="segmap" />
+            <PropertyRef Name="lstart" />
+            <PropertyRef Name="sizepg" />
+            <PropertyRef Name="vstart" />
+          </Key>
+          <Property Name="xserver_name" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+          <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+          <Property Name="xfallback_vstart" Type="int" />
+          <Property Name="dbid" Type="smallint" Nullable="false" />
+          <Property Name="segmap" Type="int" Nullable="false" />
+          <Property Name="lstart" Type="int" Nullable="false" />
+          <Property Name="sizepg" Type="int" Nullable="false" />
+          <Property Name="vstart" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_monitor' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="spt_monitor">
+          <Key>
+            <PropertyRef Name="lastrun" />
+            <PropertyRef Name="cpu_busy" />
+            <PropertyRef Name="io_busy" />
+            <PropertyRef Name="idle" />
+            <PropertyRef Name="pack_received" />
+            <PropertyRef Name="pack_sent" />
+            <PropertyRef Name="connections" />
+            <PropertyRef Name="pack_errors" />
+            <PropertyRef Name="total_read" />
+            <PropertyRef Name="total_write" />
+            <PropertyRef Name="total_errors" />
+          </Key>
+          <Property Name="lastrun" Type="datetime" Nullable="false" />
+          <Property Name="cpu_busy" Type="int" Nullable="false" />
+          <Property Name="io_busy" Type="int" Nullable="false" />
+          <Property Name="idle" Type="int" Nullable="false" />
+          <Property Name="pack_received" Type="int" Nullable="false" />
+          <Property Name="pack_sent" Type="int" Nullable="false" />
+          <Property Name="connections" Type="int" Nullable="false" />
+          <Property Name="pack_errors" Type="int" Nullable="false" />
+          <Property Name="total_read" Type="int" Nullable="false" />
+          <Property Name="total_write" Type="int" Nullable="false" />
+          <Property Name="total_errors" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'master.dbo.spt_values' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="spt_values">
+          <Key>
+            <PropertyRef Name="number" />
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="35" />
+          <Property Name="number" Type="int" Nullable="false" />
+          <Property Name="type" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="low" Type="int" />
+          <Property Name="high" Type="int" />
+          <Property Name="status" Type="int" />
+        </EntityType>
+        <Association Name="FK_CORE_work_idComposerMN">
+          <End Role="CORE_artist" Type="Self.CORE_artist" Multiplicity="1" />
+          <End Role="mc_composition" Type="Self.mc_composition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CORE_artist">
+              <PropertyRef Name="idMN" />
+            </Principal>
+            <Dependent Role="mc_composition">
+              <PropertyRef Name="idComposerMN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mn_composer_rel_mn_composer_idComposer">
+          <End Role="mn_composer" Type="Self.mn_composer" Multiplicity="1" />
+          <End Role="mn_composer_rel" Type="Self.mn_composer_rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mn_composer">
+              <PropertyRef Name="idComposer" />
+            </Principal>
+            <Dependent Role="mn_composer_rel">
+              <PropertyRef Name="idComposer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mn_composer_rel_mn_relTip_idRelTip">
+          <End Role="mn_relTip" Type="Self.mn_relTip" Multiplicity="1" />
+          <End Role="mn_composer_rel" Type="Self.mn_composer_rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mn_relTip">
+              <PropertyRef Name="idRelTip" />
+            </Principal>
+            <Dependent Role="mn_composer_rel">
+              <PropertyRef Name="idRelTip" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="masterModelStoreContainer">
+          <EntitySet Name="CORE_artist" EntityType="Self.CORE_artist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mc_composition" EntityType="Self.mc_composition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mc_composition_parts" EntityType="Self.mc_composition_parts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mn_composer" EntityType="Self.mn_composer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mn_composer_rel" EntityType="Self.mn_composer_rel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="mn_relTip" EntityType="Self.mn_relTip" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MSreplication_options" EntityType="Self.MSreplication_options" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [MSreplication_options].[optname] AS [optname], 
+    [MSreplication_options].[value] AS [value], 
+    [MSreplication_options].[major_version] AS [major_version], 
+    [MSreplication_options].[minor_version] AS [minor_version], 
+    [MSreplication_options].[revision] AS [revision], 
+    [MSreplication_options].[install_failures] AS [install_failures]
+    FROM [dbo].[MSreplication_options] AS [MSreplication_options]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="spt_fallback_db" EntityType="Self.spt_fallback_db" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [spt_fallback_db].[xserver_name] AS [xserver_name], 
+    [spt_fallback_db].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_db].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_db].[xfallback_dbid] AS [xfallback_dbid], 
+    [spt_fallback_db].[name] AS [name], 
+    [spt_fallback_db].[dbid] AS [dbid], 
+    [spt_fallback_db].[status] AS [status], 
+    [spt_fallback_db].[version] AS [version]
+    FROM [dbo].[spt_fallback_db] AS [spt_fallback_db]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="spt_fallback_dev" EntityType="Self.spt_fallback_dev" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [spt_fallback_dev].[xserver_name] AS [xserver_name], 
+    [spt_fallback_dev].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_dev].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_dev].[xfallback_low] AS [xfallback_low], 
+    [spt_fallback_dev].[xfallback_drive] AS [xfallback_drive], 
+    [spt_fallback_dev].[low] AS [low], 
+    [spt_fallback_dev].[high] AS [high], 
+    [spt_fallback_dev].[status] AS [status], 
+    [spt_fallback_dev].[name] AS [name], 
+    [spt_fallback_dev].[phyname] AS [phyname]
+    FROM [dbo].[spt_fallback_dev] AS [spt_fallback_dev]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="spt_fallback_usg" EntityType="Self.spt_fallback_usg" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [spt_fallback_usg].[xserver_name] AS [xserver_name], 
+    [spt_fallback_usg].[xdttm_ins] AS [xdttm_ins], 
+    [spt_fallback_usg].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+    [spt_fallback_usg].[xfallback_vstart] AS [xfallback_vstart], 
+    [spt_fallback_usg].[dbid] AS [dbid], 
+    [spt_fallback_usg].[segmap] AS [segmap], 
+    [spt_fallback_usg].[lstart] AS [lstart], 
+    [spt_fallback_usg].[sizepg] AS [sizepg], 
+    [spt_fallback_usg].[vstart] AS [vstart]
+    FROM [dbo].[spt_fallback_usg] AS [spt_fallback_usg]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="spt_monitor" EntityType="Self.spt_monitor" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [spt_monitor].[lastrun] AS [lastrun], 
+    [spt_monitor].[cpu_busy] AS [cpu_busy], 
+    [spt_monitor].[io_busy] AS [io_busy], 
+    [spt_monitor].[idle] AS [idle], 
+    [spt_monitor].[pack_received] AS [pack_received], 
+    [spt_monitor].[pack_sent] AS [pack_sent], 
+    [spt_monitor].[connections] AS [connections], 
+    [spt_monitor].[pack_errors] AS [pack_errors], 
+    [spt_monitor].[total_read] AS [total_read], 
+    [spt_monitor].[total_write] AS [total_write], 
+    [spt_monitor].[total_errors] AS [total_errors]
+    FROM [dbo].[spt_monitor] AS [spt_monitor]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="spt_values" EntityType="Self.spt_values" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [spt_values].[name] AS [name], 
+    [spt_values].[number] AS [number], 
+    [spt_values].[type] AS [type], 
+    [spt_values].[low] AS [low], 
+    [spt_values].[high] AS [high], 
+    [spt_values].[status] AS [status]
+    FROM [dbo].[spt_values] AS [spt_values]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_CORE_work_idComposerMN" Association="Self.FK_CORE_work_idComposerMN">
+            <End Role="CORE_artist" EntitySet="CORE_artist" />
+            <End Role="mc_composition" EntitySet="mc_composition" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mn_composer_rel_mn_composer_idComposer" Association="Self.FK_mn_composer_rel_mn_composer_idComposer">
+            <End Role="mn_composer" EntitySet="mn_composer" />
+            <End Role="mn_composer_rel" EntitySet="mn_composer_rel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mn_composer_rel_mn_relTip_idRelTip" Association="Self.FK_mn_composer_rel_mn_relTip_idRelTip">
+            <End Role="mn_relTip" EntitySet="mn_relTip" />
+            <End Role="mn_composer_rel" EntitySet="mn_composer_rel" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CORE_artist">
+          <Key>
+            <PropertyRef Name="idMN" />
+          </Key>
+          <Property Name="idMN" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nameMN" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="urlSource" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ranking" Type="Int32" Nullable="false" />
+          <Property Name="urlImage" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="biographpy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="beginDate" Type="DateTime" Precision="3" />
+          <Property Name="genre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lastUpdated" Type="DateTime" Precision="3" />
+          <Property Name="idArtistDZ" Type="Int32" />
+          <Property Name="widthImage" Type="Int32" />
+          <Property Name="heightImage" Type="Int32" />
+          <NavigationProperty Name="mc_composition" Relationship="Self.FK_CORE_work_idComposerMN" FromRole="CORE_artist" ToRole="mc_composition" />
+        </EntityType>
+        <EntityType Name="mc_composition">
+          <Key>
+            <PropertyRef Name="idWork" />
+          </Key>
+          <Property Name="idWork" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nameWork" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idComposerMN" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="composedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="urlSource" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="workGenre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="workType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="descriptionAuthor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="featured" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="performancesCount" Type="Int32" />
+          <Property Name="atAgeOf" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="lastProcesed" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CORE_artist" Relationship="Self.FK_CORE_work_idComposerMN" FromRole="mc_composition" ToRole="CORE_artist" />
+        </EntityType>
+        <EntityType Name="mc_composition_parts">
+          <Key>
+            <PropertyRef Name="idWork" />
+            <PropertyRef Name="idWorkOrd" />
+          </Key>
+          <Property Name="idWork" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="idWorkOrd" Type="Int32" Nullable="false" />
+          <Property Name="nameWorkItem" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="avgDuration" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="mn_composer">
+          <Key>
+            <PropertyRef Name="idComposer" />
+          </Key>
+          <Property Name="idComposer" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="urlSource" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastUpdated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="begin_date" Type="DateTime" Precision="3" />
+          <Property Name="end_date" Type="DateTime" Precision="3" />
+          <Property Name="ranking" Type="Int32" />
+          <Property Name="biography" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="mn_composer_rel" Relationship="Self.FK_mn_composer_rel_mn_composer_idComposer" FromRole="mn_composer" ToRole="mn_composer_rel" />
+        </EntityType>
+        <EntityType Name="mn_composer_rel">
+          <Key>
+            <PropertyRef Name="idComposer" />
+            <PropertyRef Name="idRelTip" />
+            <PropertyRef Name="idComposerRel" />
+          </Key>
+          <Property Name="idComposer" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="idRelTip" Type="Int32" Nullable="false" />
+          <Property Name="idComposerRel" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nOrd" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="mn_composer" Relationship="Self.FK_mn_composer_rel_mn_composer_idComposer" FromRole="mn_composer_rel" ToRole="mn_composer" />
+          <NavigationProperty Name="mn_relTip" Relationship="Self.FK_mn_composer_rel_mn_relTip_idRelTip" FromRole="mn_composer_rel" ToRole="mn_relTip" />
+        </EntityType>
+        <EntityType Name="mn_relTip">
+          <Key>
+            <PropertyRef Name="idRelTip" />
+          </Key>
+          <Property Name="idRelTip" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="mn_composer_rel" Relationship="Self.FK_mn_composer_rel_mn_relTip_idRelTip" FromRole="mn_relTip" ToRole="mn_composer_rel" />
+        </EntityType>
+        <EntityType Name="MSreplication_options">
+          <Key>
+            <PropertyRef Name="optname" />
+            <PropertyRef Name="value" />
+            <PropertyRef Name="major_version" />
+            <PropertyRef Name="minor_version" />
+            <PropertyRef Name="revision" />
+            <PropertyRef Name="install_failures" />
+          </Key>
+          <Property Name="optname" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="value" Type="Boolean" Nullable="false" />
+          <Property Name="major_version" Type="Int32" Nullable="false" />
+          <Property Name="minor_version" Type="Int32" Nullable="false" />
+          <Property Name="revision" Type="Int32" Nullable="false" />
+          <Property Name="install_failures" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="spt_fallback_db">
+          <Key>
+            <PropertyRef Name="xserver_name" />
+            <PropertyRef Name="xdttm_ins" />
+            <PropertyRef Name="xdttm_last_ins_upd" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="dbid" />
+            <PropertyRef Name="status" />
+            <PropertyRef Name="version" />
+          </Key>
+          <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xfallback_dbid" Type="Int16" />
+          <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dbid" Type="Int16" Nullable="false" />
+          <Property Name="status" Type="Int16" Nullable="false" />
+          <Property Name="version" Type="Int16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="spt_fallback_dev">
+          <Key>
+            <PropertyRef Name="xserver_name" />
+            <PropertyRef Name="xdttm_ins" />
+            <PropertyRef Name="xdttm_last_ins_upd" />
+            <PropertyRef Name="low" />
+            <PropertyRef Name="high" />
+            <PropertyRef Name="status" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="phyname" />
+          </Key>
+          <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xfallback_low" Type="Int32" />
+          <Property Name="xfallback_drive" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="low" Type="Int32" Nullable="false" />
+          <Property Name="high" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="Int16" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="phyname" Type="String" MaxLength="127" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="spt_fallback_usg">
+          <Key>
+            <PropertyRef Name="xserver_name" />
+            <PropertyRef Name="xdttm_ins" />
+            <PropertyRef Name="xdttm_last_ins_upd" />
+            <PropertyRef Name="dbid" />
+            <PropertyRef Name="segmap" />
+            <PropertyRef Name="lstart" />
+            <PropertyRef Name="sizepg" />
+            <PropertyRef Name="vstart" />
+          </Key>
+          <Property Name="xserver_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="xfallback_vstart" Type="Int32" />
+          <Property Name="dbid" Type="Int16" Nullable="false" />
+          <Property Name="segmap" Type="Int32" Nullable="false" />
+          <Property Name="lstart" Type="Int32" Nullable="false" />
+          <Property Name="sizepg" Type="Int32" Nullable="false" />
+          <Property Name="vstart" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="spt_monitor">
+          <Key>
+            <PropertyRef Name="lastrun" />
+            <PropertyRef Name="cpu_busy" />
+            <PropertyRef Name="io_busy" />
+            <PropertyRef Name="idle" />
+            <PropertyRef Name="pack_received" />
+            <PropertyRef Name="pack_sent" />
+            <PropertyRef Name="connections" />
+            <PropertyRef Name="pack_errors" />
+            <PropertyRef Name="total_read" />
+            <PropertyRef Name="total_write" />
+            <PropertyRef Name="total_errors" />
+          </Key>
+          <Property Name="lastrun" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="cpu_busy" Type="Int32" Nullable="false" />
+          <Property Name="io_busy" Type="Int32" Nullable="false" />
+          <Property Name="idle" Type="Int32" Nullable="false" />
+          <Property Name="pack_received" Type="Int32" Nullable="false" />
+          <Property Name="pack_sent" Type="Int32" Nullable="false" />
+          <Property Name="connections" Type="Int32" Nullable="false" />
+          <Property Name="pack_errors" Type="Int32" Nullable="false" />
+          <Property Name="total_read" Type="Int32" Nullable="false" />
+          <Property Name="total_write" Type="Int32" Nullable="false" />
+          <Property Name="total_errors" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="spt_values">
+          <Key>
+            <PropertyRef Name="number" />
+            <PropertyRef Name="type" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+          <Property Name="number" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="3" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="low" Type="Int32" />
+          <Property Name="high" Type="Int32" />
+          <Property Name="status" Type="Int32" />
+        </EntityType>
+        <Association Name="FK_CORE_work_idComposerMN">
+          <End Role="CORE_artist" Type="Self.CORE_artist" Multiplicity="1" />
+          <End Role="mc_composition" Type="Self.mc_composition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CORE_artist">
+              <PropertyRef Name="idMN" />
+            </Principal>
+            <Dependent Role="mc_composition">
+              <PropertyRef Name="idComposerMN" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mn_composer_rel_mn_composer_idComposer">
+          <End Role="mn_composer" Type="Self.mn_composer" Multiplicity="1" />
+          <End Role="mn_composer_rel" Type="Self.mn_composer_rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mn_composer">
+              <PropertyRef Name="idComposer" />
+            </Principal>
+            <Dependent Role="mn_composer_rel">
+              <PropertyRef Name="idComposer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_mn_composer_rel_mn_relTip_idRelTip">
+          <End Role="mn_relTip" Type="Self.mn_relTip" Multiplicity="1" />
+          <End Role="mn_composer_rel" Type="Self.mn_composer_rel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mn_relTip">
+              <PropertyRef Name="idRelTip" />
+            </Principal>
+            <Dependent Role="mn_composer_rel">
+              <PropertyRef Name="idRelTip" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="masterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CORE_artist" EntityType="Self.CORE_artist" />
+          <EntitySet Name="mc_composition" EntityType="Self.mc_composition" />
+          <EntitySet Name="mc_composition_parts" EntityType="Self.mc_composition_parts" />
+          <EntitySet Name="mn_composer" EntityType="Self.mn_composer" />
+          <EntitySet Name="mn_composer_rel" EntityType="Self.mn_composer_rel" />
+          <EntitySet Name="mn_relTip" EntityType="Self.mn_relTip" />
+          <EntitySet Name="MSreplication_options" EntityType="Self.MSreplication_options" />
+          <EntitySet Name="spt_fallback_db" EntityType="Self.spt_fallback_db" />
+          <EntitySet Name="spt_fallback_dev" EntityType="Self.spt_fallback_dev" />
+          <EntitySet Name="spt_fallback_usg" EntityType="Self.spt_fallback_usg" />
+          <EntitySet Name="spt_monitor" EntityType="Self.spt_monitor" />
+          <EntitySet Name="spt_values" EntityType="Self.spt_values" />
+          <AssociationSet Name="FK_CORE_work_idComposerMN" Association="Self.FK_CORE_work_idComposerMN">
+            <End Role="CORE_artist" EntitySet="CORE_artist" />
+            <End Role="mc_composition" EntitySet="mc_composition" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mn_composer_rel_mn_composer_idComposer" Association="Self.FK_mn_composer_rel_mn_composer_idComposer">
+            <End Role="mn_composer" EntitySet="mn_composer" />
+            <End Role="mn_composer_rel" EntitySet="mn_composer_rel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_mn_composer_rel_mn_relTip_idRelTip" Association="Self.FK_mn_composer_rel_mn_relTip_idRelTip">
+            <End Role="mn_relTip" EntitySet="mn_relTip" />
+            <End Role="mn_composer_rel" EntitySet="mn_composer_rel" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="masterEntities">
+          <EntitySetMapping Name="CORE_artist">
+            <EntityTypeMapping TypeName="masterModel.CORE_artist">
+              <MappingFragment StoreEntitySet="CORE_artist">
+                <ScalarProperty Name="idMN" ColumnName="idMN" />
+                <ScalarProperty Name="nameMN" ColumnName="nameMN" />
+                <ScalarProperty Name="urlSource" ColumnName="urlSource" />
+                <ScalarProperty Name="ranking" ColumnName="ranking" />
+                <ScalarProperty Name="urlImage" ColumnName="urlImage" />
+                <ScalarProperty Name="biographpy" ColumnName="biographpy" />
+                <ScalarProperty Name="beginDate" ColumnName="beginDate" />
+                <ScalarProperty Name="genre" ColumnName="genre" />
+                <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+                <ScalarProperty Name="idArtistDZ" ColumnName="idArtistDZ" />
+                <ScalarProperty Name="widthImage" ColumnName="widthImage" />
+                <ScalarProperty Name="heightImage" ColumnName="heightImage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mc_composition">
+            <EntityTypeMapping TypeName="masterModel.mc_composition">
+              <MappingFragment StoreEntitySet="mc_composition">
+                <ScalarProperty Name="idWork" ColumnName="idWork" />
+                <ScalarProperty Name="nameWork" ColumnName="nameWork" />
+                <ScalarProperty Name="idComposerMN" ColumnName="idComposerMN" />
+                <ScalarProperty Name="composedDate" ColumnName="composedDate" />
+                <ScalarProperty Name="urlSource" ColumnName="urlSource" />
+                <ScalarProperty Name="workGenre" ColumnName="workGenre" />
+                <ScalarProperty Name="workType" ColumnName="workType" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="descriptionAuthor" ColumnName="descriptionAuthor" />
+                <ScalarProperty Name="featured" ColumnName="featured" />
+                <ScalarProperty Name="performancesCount" ColumnName="performancesCount" />
+                <ScalarProperty Name="atAgeOf" ColumnName="atAgeOf" />
+                <ScalarProperty Name="lastProcesed" ColumnName="lastProcesed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mc_composition_parts">
+            <EntityTypeMapping TypeName="masterModel.mc_composition_parts">
+              <MappingFragment StoreEntitySet="mc_composition_parts">
+                <ScalarProperty Name="idWork" ColumnName="idWork" />
+                <ScalarProperty Name="idWorkOrd" ColumnName="idWorkOrd" />
+                <ScalarProperty Name="nameWorkItem" ColumnName="nameWorkItem" />
+                <ScalarProperty Name="avgDuration" ColumnName="avgDuration" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mn_composer">
+            <EntityTypeMapping TypeName="masterModel.mn_composer">
+              <MappingFragment StoreEntitySet="mn_composer">
+                <ScalarProperty Name="idComposer" ColumnName="idComposer" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="urlSource" ColumnName="urlSource" />
+                <ScalarProperty Name="lastUpdated" ColumnName="lastUpdated" />
+                <ScalarProperty Name="begin_date" ColumnName="begin_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="ranking" ColumnName="ranking" />
+                <ScalarProperty Name="biography" ColumnName="biography" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mn_composer_rel">
+            <EntityTypeMapping TypeName="masterModel.mn_composer_rel">
+              <MappingFragment StoreEntitySet="mn_composer_rel">
+                <ScalarProperty Name="idComposer" ColumnName="idComposer" />
+                <ScalarProperty Name="idRelTip" ColumnName="idRelTip" />
+                <ScalarProperty Name="idComposerRel" ColumnName="idComposerRel" />
+                <ScalarProperty Name="nOrd" ColumnName="nOrd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="mn_relTip">
+            <EntityTypeMapping TypeName="masterModel.mn_relTip">
+              <MappingFragment StoreEntitySet="mn_relTip">
+                <ScalarProperty Name="idRelTip" ColumnName="idRelTip" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MSreplication_options">
+            <EntityTypeMapping TypeName="masterModel.MSreplication_options">
+              <MappingFragment StoreEntitySet="MSreplication_options">
+                <ScalarProperty Name="optname" ColumnName="optname" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="major_version" ColumnName="major_version" />
+                <ScalarProperty Name="minor_version" ColumnName="minor_version" />
+                <ScalarProperty Name="revision" ColumnName="revision" />
+                <ScalarProperty Name="install_failures" ColumnName="install_failures" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="spt_fallback_db">
+            <EntityTypeMapping TypeName="masterModel.spt_fallback_db">
+              <MappingFragment StoreEntitySet="spt_fallback_db">
+                <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+                <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+                <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+                <ScalarProperty Name="xfallback_dbid" ColumnName="xfallback_dbid" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="dbid" ColumnName="dbid" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="version" ColumnName="version" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="spt_fallback_dev">
+            <EntityTypeMapping TypeName="masterModel.spt_fallback_dev">
+              <MappingFragment StoreEntitySet="spt_fallback_dev">
+                <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+                <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+                <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+                <ScalarProperty Name="xfallback_low" ColumnName="xfallback_low" />
+                <ScalarProperty Name="xfallback_drive" ColumnName="xfallback_drive" />
+                <ScalarProperty Name="low" ColumnName="low" />
+                <ScalarProperty Name="high" ColumnName="high" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="phyname" ColumnName="phyname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="spt_fallback_usg">
+            <EntityTypeMapping TypeName="masterModel.spt_fallback_usg">
+              <MappingFragment StoreEntitySet="spt_fallback_usg">
+                <ScalarProperty Name="xserver_name" ColumnName="xserver_name" />
+                <ScalarProperty Name="xdttm_ins" ColumnName="xdttm_ins" />
+                <ScalarProperty Name="xdttm_last_ins_upd" ColumnName="xdttm_last_ins_upd" />
+                <ScalarProperty Name="xfallback_vstart" ColumnName="xfallback_vstart" />
+                <ScalarProperty Name="dbid" ColumnName="dbid" />
+                <ScalarProperty Name="segmap" ColumnName="segmap" />
+                <ScalarProperty Name="lstart" ColumnName="lstart" />
+                <ScalarProperty Name="sizepg" ColumnName="sizepg" />
+                <ScalarProperty Name="vstart" ColumnName="vstart" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="spt_monitor">
+            <EntityTypeMapping TypeName="masterModel.spt_monitor">
+              <MappingFragment StoreEntitySet="spt_monitor">
+                <ScalarProperty Name="lastrun" ColumnName="lastrun" />
+                <ScalarProperty Name="cpu_busy" ColumnName="cpu_busy" />
+                <ScalarProperty Name="io_busy" ColumnName="io_busy" />
+                <ScalarProperty Name="idle" ColumnName="idle" />
+                <ScalarProperty Name="pack_received" ColumnName="pack_received" />
+                <ScalarProperty Name="pack_sent" ColumnName="pack_sent" />
+                <ScalarProperty Name="connections" ColumnName="connections" />
+                <ScalarProperty Name="pack_errors" ColumnName="pack_errors" />
+                <ScalarProperty Name="total_read" ColumnName="total_read" />
+                <ScalarProperty Name="total_write" ColumnName="total_write" />
+                <ScalarProperty Name="total_errors" ColumnName="total_errors" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="spt_values">
+            <EntityTypeMapping TypeName="masterModel.spt_values">
+              <MappingFragment StoreEntitySet="spt_values">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="low" ColumnName="low" />
+                <ScalarProperty Name="high" ColumnName="high" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
